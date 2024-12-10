@@ -1,17 +1,21 @@
+/* Centraliza o conteúdo do elemento com id "welcome" e define largura máxima */
 #welcome {
   text-align: center;
   max-width: 500px;
 }
 
+/* Define margem inferior para os títulos e parágrafos dentro do "welcome" */
 #welcome h2,
 #welcome p {
   margin-bottom: 1rem;
 }
 
+/* Altera a cor do texto dos parágrafos dentro do "welcome" */
 #welcome p {
   color: #8435de;
 }
 
+/* Adiciona margem superior às imagens dentro do "welcome" */
 #welcome img {
   margin-top: 2rem;
 }

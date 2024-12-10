@@ -1,12 +1,14 @@
+/* Centraliza o conteúdo do elemento com classe "App" e aplica espaçamento no topo */
 .App {
-  text-align: center;
-  padding-top: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center; /* Centraliza o texto */
+  padding-top: 3rem; /* Adiciona 3rem de padding no topo */
+  display: flex; /* Define o layout como flexbox */
+  flex-direction: column; /* Alinha os itens em coluna */
+  align-items: center; /* Centraliza os itens no eixo horizontal */
+  justify-content: center; /* Centraliza os itens no eixo vertical */
 }
 
+/* Adiciona margem inferior ao título dentro do "App" */
 .App h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; /* Espaçamento inferior de 2rem */
 }
