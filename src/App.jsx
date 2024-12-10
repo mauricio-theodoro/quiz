@@ -1,10 +1,8 @@
-
-
-import './App.css'
-import { Welcome } from './components/Welcome';
+import "./App.css";
+import { Welcome } from "./components/Welcome";
 
 function App() {
-  return ( 
+  return (
     <div className="App">
       <h1>Quiz de Programação</h1>
       <Welcome />
@@ -12,4 +10,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
