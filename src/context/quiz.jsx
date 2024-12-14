@@ -8,11 +8,10 @@ const initialState = {
   questions,
   currentQuestion: 0,
   score: 0,
+  answerSelected: false,
 };
 
 const quizReducer = (state, action) => {
-  console.log(state, action);
-
   switch (action.type) {
     case "CHANGE_STATE":
       return {
@@ -45,6 +44,9 @@ const quizReducer = (state, action) => {
 
     case "NEW_GAME":
       return initialState;
+
+    case "CHECK_ANSWER":
+      console.log(action)
 
     default:
       return state;
