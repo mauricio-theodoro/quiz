@@ -76,8 +76,8 @@ npm start
 Para qualquer dúvida, entre em contato comigo:
 
 - **E-mail:** mauricioantonionetinho@gmail.com
-- **LinkedIn:** [seu-linkedin](https://www.linkedin.com/in/mauricio-theodoro-98443598/)
-- **GitHub:** [seu-github](https://github.com/mauricio-theodoro)
+- **LinkedIn:** [Linkedin](https://www.linkedin.com/in/mauricio-theodoro-98443598/)
+- **GitHub:** [Github](https://github.com/mauricio-theodoro)
 
 ---
 
