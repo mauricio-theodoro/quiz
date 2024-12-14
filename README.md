@@ -1,5 +1,5 @@
 
-# 🧑‍💻 **Quiz de Programação**
+# **Quiz de Programação**
 
 ## 📌 Descrição
 
