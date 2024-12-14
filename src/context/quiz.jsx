@@ -20,9 +20,7 @@ const quizReducer = (state, action) => {
       };
 
     case "REORDER_QUESTIONS":
-      const reorderedQuestions = questions.sort(() => {
-        return Math.random() - 0.5; // ordenação de arrays
-      });
+      const reorderedQuestions = questions.sort(() => Math.random() - 0.5);
       return {
         ...state,
         questions: reorderedQuestions,
@@ -30,11 +28,7 @@ const quizReducer = (state, action) => {
 
     case "CHANGE_QUESTION":
       const nextQuestion = state.currentQuestion + 1;
-      let endGame = false;
-
-      if (!questions[nextQuestion]) {
-        endGame = true;
-      }
+      const endGame = !state.questions[nextQuestion];
 
       return {
         ...state,
@@ -46,7 +40,23 @@ const quizReducer = (state, action) => {
       return initialState;
 
     case "CHECK_ANSWER":
-      console.log(action)
+      if (state.answerSelected) return state; // Evita múltiplas seleções
+
+      const answer = action.payload.answer;
+      const option = action.payload.option;
+      const isCorrect = answer === option;
+
+      return {
+        ...state,
+        score: state.score + (isCorrect ? 1 : 0),
+        answerSelected: true, // Atualiza para indicar que uma resposta foi selecionada
+      };
+
+    case "RESET_ANSWER_SELECTED":
+      return {
+        ...state,
+        answerSelected: false, // Redefine o estado de resposta selecionada
+      };
 
     default:
       return state;

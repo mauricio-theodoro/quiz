@@ -15,3 +15,8 @@
 #options-container .option p {
     margin-bottom: 0;
 }
+
+.option.disabled {
+    cursor: not-allowed;
+    background-color: #ddd;
+  }
