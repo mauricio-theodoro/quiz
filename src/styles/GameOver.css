@@ -1,0 +1,25 @@
+/* Centraliza o conteúdo do elemento com id "welcome" e define largura máxima */
+#gameover {
+    text-align: center;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Define margem inferior para os títulos e parágrafos dentro do "welcome" */
+  #gameover h2,
+  #gameover p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Altera a cor do texto dos parágrafos dentro do "welcome" */
+  #gameover p {
+    color: #8435de;
+  }
+  
+  /* Adiciona margem superior às imagens dentro do "welcome" */
+  #gameover img {
+    margin: 2rem;
+    height: 200px;
+  }
+  
